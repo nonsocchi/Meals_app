@@ -16,7 +16,7 @@ class MyApp extends StatelessWidget {
           colorScheme: ColorScheme.fromSwatch(primarySwatch: Colors.pink)
               .copyWith(secondary: Colors.amber),
           canvasColor: const Color.fromRGBO(255, 254, 229, 1),
-          fontFamily: 'RobotoCondensed', // switched this with headline6
+          fontFamily: 'Raleway', // switched this with headline6
           textTheme: ThemeData.light().textTheme.copyWith(
                 bodyText1:
                     const TextStyle(color: Color.fromRGBO(20, 51, 51, 1)),
@@ -31,7 +31,7 @@ class MyApp extends StatelessWidget {
       initialRoute: '/',
       routes: {
         '/': (ctx) => const CategoriesScreen(),
-        CategoryMealsScreen.routeName: (ctx) => CategoryMealsScreen()
+        CategoryMealsScreen.routeName: (ctx) => const CategoryMealsScreen()
       },
     );
   }
